@@ -23,7 +23,6 @@ const embedFailed = ref(false)
           height="450"
           frameborder="0"
           style="border: 1px solid #bfcbda88; border-radius: 4px"
-          allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
           @error="embedFailed = true"
