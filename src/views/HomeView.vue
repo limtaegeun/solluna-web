@@ -1,9 +1,23 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import HeroSection from '@/components/sections/HeroSection.vue'
+import ValueProp from '@/components/sections/ValueProp.vue'
+import PlaceCards from '@/components/sections/PlaceCards.vue'
+import GalleryEmbed from '@/components/sections/GalleryEmbed.vue'
+import ReviewsSection from '@/components/sections/ReviewsSection.vue'
+import OperationInfo from '@/components/sections/OperationInfo.vue'
+import AboutSection from '@/components/sections/AboutSection.vue'
+import JoinCTA from '@/components/sections/JoinCTA.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <HeroSection />
+    <ValueProp />
+    <PlaceCards />
+    <GalleryEmbed />
+    <ReviewsSection />
+    <OperationInfo />
+    <AboutSection />
+    <JoinCTA />
   </main>
 </template>

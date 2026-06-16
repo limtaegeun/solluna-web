@@ -1,0 +1,58 @@
+/* 솔루나 디자인 토큰
+ * 정확한 색상은 src/assets/design/home design.png가 단일 진실(SoT).
+ * 아래 hex는 PNG에서 근사 추출한 값 — 픽셀 정밀 보정 시 여기만 고치면 전체 반영됨.
+ */
+:root {
+  /* palette */
+  --color-cream: #fbf5e9;
+  --color-yellow: #F7D46C;
+  --color-yellow-deep: #f0b429;
+  --color-navy: #161f38;
+  --color-navy-soft: #1f2a48;
+  --color-orange: #ef8b3c;
+  --color-ink: #1b1b1b;
+  --color-ink-soft: #4a4a52;
+  --color-white: #ffffff;
+  --color-line: rgba(22, 31, 56, 0.12);
+
+  /* roles */
+  --bg-page: var(--color-cream);
+  --bg-dark: var(--color-navy);
+  --bg-accent: var(--color-yellow);
+  --text-on-light: var(--color-ink);
+  --text-on-dark: var(--color-cream);
+  --text-muted: var(--color-ink-soft);
+
+  /* typography */
+  --font-sans: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont,
+    'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --fs-hero: clamp(1.75rem, 5vw, 3rem);
+  --fs-h2: clamp(1.5rem, 4vw, 2.25rem);
+  --fs-h3: clamp(1.125rem, 2.5vw, 1.5rem);
+  --fs-body: clamp(0.95rem, 2vw, 1.0625rem);
+  --fs-small: 0.875rem;
+  --fw-bold: 800;
+  --fw-semibold: 700;
+  --fw-regular: 500;
+
+  /* spacing — 8px base */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-12: 6rem;
+  --section-pad-y: clamp(3rem, 8vw, 6rem);
+
+  /* layout */
+  --container-max: 1100px;
+  --container-pad-x: clamp(1.25rem, 5vw, 3rem);
+
+  /* radius / shadow */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-card: 0 12px 30px rgba(22, 31, 56, 0.12);
+}
