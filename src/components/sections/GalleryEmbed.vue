@@ -17,18 +17,21 @@ const embedFailed = ref(false)
       <!-- RSVP 서비스 임베드 슬롯 -->
       <div class="gallery__embed">
         <iframe
-          v-if="RSVP.enabled && RSVP.embedSrc && !embedFailed"
-          class="gallery__iframe"
-          :src="RSVP.embedSrc"
-          title="솔루나 열린 모임 목록"
-          loading="lazy"
+          v-if="!embedFailed"
+          src="https://ogoto.co/cal/c/YiPpnX9hsZTDdTgCihNF?noInfo=true&newTab=true"
+          width="1000"
+          height="450"
+          frameborder="0"
+          style="border: 1px solid #bfcbda88; border-radius: 4px"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
           @error="embedFailed = true"
         ></iframe>
-
         <!-- 임베드 비활성/실패 시 fallback -->
         <div v-else class="gallery__fallback">
           <p class="gallery__fallback-text">
-            지금 열려있는 모임은 RSVP 페이지에서 확인할 수 있어요.
+            지금 열려있는 모임은 오고토 페이지에서 확인할 수 있어요.
           </p>
           <a
             class="cta-button cta-button--accent"

@@ -7,7 +7,7 @@ import kakao from '@/assets/imgs/kakao.png'
 const socials = [
   { label: 'Instagram', href: LINKS.instagram, icon: insta },
   { label: 'Threads', href: LINKS.threads, icon: thread },
-  { label: 'KakaoTalk', href: LINKS.kakao, icon: kakao },
+  { label: 'Open KakaoTalk', href: LINKS.kakao, icon: kakao },
 ]
 </script>
 
