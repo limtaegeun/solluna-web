@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { LINKS } from '@/constants/links'
-import heroImage from '@/assets/imgs/루나가든 보드게임.jpg'
+import heroImage from '@/assets/imgs/d1.webp'
 </script>
 
 <template>
@@ -13,12 +13,7 @@ import heroImage from '@/assets/imgs/루나가든 보드게임.jpg'
           새로운 사람들과<br />
           <span class="hero__hl">특별한 시간</span>을 가져보세요.
         </h1>
-        <p class="hero__sub">
-          보드게임, 머더미스터리부터 와인까지 — 솔루나에서 취향이 맞는 사람들과 만나요.
-        </p>
-        <a class="cta-button cta-button--accent hero__cta" :href="LINKS.ogotoClub" target="_blank" rel="noopener">
-          모임 둘러보기 →
-        </a>
+        <a class="cta-button cta-button--accent hero__cta" href="#gallery"> 모임 둘러보기 → </a>
       </div>
       <div class="hero__media">
         <img :src="heroImage" alt="솔루나 보드게임 모임 현장" loading="eager" />

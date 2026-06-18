@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import imgMeetup from '@/assets/imgs/솔라운지 머미.jpg'
-import imgGame from '@/assets/imgs/루나가든 보드게임.jpg'
+import space1 from '@/assets/imgs/space1.webp'
+import space2 from '@/assets/imgs/space2.webp'
 
 const cards = [
   {
-    image: imgMeetup,
+    image: space1,
     title: '성신여대입구역',
     subTitle: '루나가든',
     desc: ['4호선', '우이신설선'],
   },
   {
-    image: imgMeetup,
+    image: space2,
     title: '신촌역',
     subTitle: '솔라운지',
     desc: ['2호선', '경의중앙선'],

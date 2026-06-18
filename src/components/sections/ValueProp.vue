@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import l1 from '@/assets/imgs/l1.webp'
+import l2 from '@/assets/imgs/l2.webp'
+</script>
 
 <template>
   <section class="section section--dark valueprop">
@@ -10,6 +13,14 @@
       <p class="valueprop__sub">
         혼자서는 시작하기 어려운 취미도, 솔루나에서는 함께라서 쉽고 즐겁습니다.
       </p>
+    </div>
+    <div class="flex">
+      <div class="flex-1">
+        <img :src="l1" alt="솔루나 모임 현장" loading="lazy" />
+      </div>
+      <div class="flex-4">
+        <img :src="l2" alt="솔루나 모임 현장" loading="lazy" />
+      </div>
     </div>
   </section>
 </template>

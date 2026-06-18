@@ -16,8 +16,9 @@ import JoinCTA from '@/components/sections/JoinCTA.vue'
     <PlaceCards />
     <GalleryEmbed />
     <ReviewsSection />
-    <OperationInfo />
     <AboutSection />
+    <OperationInfo />
+
     <JoinCTA />
   </main>
 </template>
