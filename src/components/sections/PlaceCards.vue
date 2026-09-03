@@ -1,18 +1,11 @@
 <script setup lang="ts">
-import space1 from '@/assets/imgs/space1.webp'
 import space2 from '@/assets/imgs/space2.webp'
 
 const cards = [
   {
-    image: space1,
-    title: '성신여대입구역',
-    subTitle: '루나가든',
-    desc: ['4호선', '우이신설선'],
-  },
-  {
     image: space2,
     title: '신촌역',
-    subTitle: '솔라운지',
+    subTitle: '루나 플레이스',
     desc: ['2호선', '경의중앙선'],
   },
 ]
@@ -53,6 +46,7 @@ const cards = [
 .placecards__grid {
   display: grid;
   gap: var(--space-4);
+  justify-content: center;
 }
 
 .card {
@@ -95,7 +89,7 @@ const cards = [
 
 @media (min-width: 720px) {
   .placecards__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
   }
 }
 </style>
