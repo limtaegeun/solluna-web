@@ -4,17 +4,17 @@ const points = [
   {
     emoji: '🎲',
     title: '처음이어도 편안하게',
-    desc: '검증된 호스트(GM)가 진행을 이끌어 처음이어도 편안해요.',
+    desc: ['검증된 호스트(GM)가 진행을 이끌어', '처음이어도 편안해요.'],
   },
   {
     emoji: '📍',
     title: '어디서나 만나기 쉽게',
-    desc: '신촌·성신여대입구 등 역세권 위주로 모임을 열어요.',
+    desc: ['신촌역 도보 5분 거리 아지트에서 모임을 열어요.'],
   },
   {
     emoji: '🤝',
     title: '같은 취향의 사람들과',
-    desc: '같은 게임을 좋아하는 사람들과 자연스럽게 어울릴 수 있어요.',
+    desc: ['같은 게임을 좋아하는 사람들과', '자연스럽게 어울릴 수 있어요.'],
   },
 ]
 </script>
@@ -29,7 +29,11 @@ const points = [
         <div v-for="p in points" :key="p.title" class="op-item">
           <span class="op-item__emoji" aria-hidden="true">{{ p.emoji }}</span>
           <h3 class="op-item__title">{{ p.title }}</h3>
-          <p class="op-item__desc">{{ p.desc }}</p>
+          <p class="op-item__desc">
+            <template v-for="(line, i) in p.desc" :key="i">
+              {{ line }}<br v-if="i < p.desc.length - 1" />
+            </template>
+          </p>
         </div>
       </div>
     </div>

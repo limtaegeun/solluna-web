@@ -8,7 +8,7 @@ import l2 from '@/assets/imgs/l2.webp'
     <div class="container">
       <h2 class="valueprop__title">
         취향이 같은 사람들과 오프라인에서<br />
-        <span class="valueprop__hl">자연스럽게 연결</span>되는 소셜 모임!
+        <span class="valueprop__hl">자연스럽게 연결</span>되는 커뮤니티!
       </h2>
       <p class="valueprop__sub">
         혼자서는 시작하기 어려운 취미도, 솔루나에서는 함께라서 쉽고 즐겁습니다.

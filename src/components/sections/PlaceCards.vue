@@ -15,7 +15,7 @@ const cards = [
   <section class="section placecards">
     <div class="container">
       <h2 class="placecards__title">
-        <span class="pill-title">모임 장소를 찾아보세요</span>
+        <span class="pill-title">도심 속 아지트</span>
       </h2>
       <div class="placecards__grid">
         <div v-for="card in cards" :key="card.title" class="card">

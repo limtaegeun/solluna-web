@@ -2,12 +2,10 @@
 import { LINKS } from '@/constants/links'
 import insta from '@/assets/imgs/insta.png'
 import thread from '@/assets/imgs/thread.png'
-import kakao from '@/assets/imgs/kakao.png'
 
 const socials = [
   { label: 'Instagram', href: LINKS.instagram, icon: insta },
   { label: 'Threads', href: LINKS.threads, icon: thread },
-  { label: 'Open KakaoTalk', href: LINKS.kakao, icon: kakao },
 ]
 </script>
 
